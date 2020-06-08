@@ -5,48 +5,95 @@
         <meta charset="utf-8">
         <style>
             body{
-            background-color:#d3d3d3;
+            background-color:#0000ff;
+            width: 100%;
+            height: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 17px;
             }
+            p{
+               color: #ff0000;
+            }
+            
         *{
             margin: 0;
             padding: 0;
         }
+
+        header{
+            position: sticky;
+            top: 0;
+        }
             a{
-               text-decoration: none;
-               color:#0000ff;
-               font-size:"15";
-               font-family: Arial, Helvetica, sans-serif;
-            }
-            h1{
+                text-decoration: none;
+                color: #000000;
+            }    
+            .topo{
+                background-color: #fff;
+                height: 80px;
                 text-align: center;
-                color: #0000ff;
-                margin-top: 52px;
-                margin-bottom: 32px;
-                margin-left: 120px;
-                margin-right: 120px;
+            }   
+            .logo{
+                width: 150px;
+                float: left;
                 padding: 5px;
-                font-family: Arial, Helvetica, sans-serif;
-            }
 
-                IMG.displayed {
-                display: block;
-                margin-left: auto;
-                margin-right: auto 
+            }
+            #img-logo{
+                width:40% ;
+            }
+            .titulo{
+                display: inline-block;
+                margin:25px auto ;
+            }
+            #titulo-site{
+                color: #8b008b;
+            }
+            .barra-topo{
+                height: 25px;
+                background-color: #00CED1;
+            }
+            .card{
+                background-color: #fff;
+                padding: 25px;
+                margin-top:20px;
+                margin-left:140px ;
+                margin-right: 140px;
+
                 
-
+                border-radius: 10px;
             }
+            .text-center{
+                text-align: center;
+            }
+
         </style>
     </head>
     <body>
-        <h1 style="background-color:  #fffafa;">Receitas da Kau!</h1>
-        <ul>
-            <a  href="receitas_doces/index.html"><li>Receitas Doces</li></a>
-            <a  href="receitas_salgadas/index.html"><li>Receitas Salgadas</li></a>
-            <br/>
 
-            <br/>
+        <header>
+            <div class="topo">
+                <div class="logo">
+                   <img id="img-logo" src="img/logo.png" alt="Logo da pagina"> 
+                </div>
+                <h1 class="titulo">
+                    <a id="titulo-site" href="https://www.tudogostoso.com.br/">Receitas da Kau!</a>
+                </h1>
+            </div>
+            <div class="barra-topo"></div>
+        </header>
 
-            <img class="displayed" src="img/gif 2.gif" alt="homem cozinhando" height="500" width="500">
-        </ul>
+         <div class="card">   
+            <p class="text-center">Escolha um tipo:</p>
+            <ul>
+                <a href="receitas_doces/index.html"><li>Receitas Doces</li></a>
+                <a  href="receitas_salgadas/index.html"><li>Receitas Salgadas</li></a>
+            </ul>    
+        </div>
+        <div>
+            <img class="card text-center" src="img/gif 2.gif" alt="homem cozinhando" width="330" height="330">
+            
+        </div>
+            
     </body>
 </html>
