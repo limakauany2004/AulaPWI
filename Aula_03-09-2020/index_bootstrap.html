@@ -10,30 +10,11 @@
 
     <title>Etec Book!</title>
 
-    <style>
-      
-      
-      .capa{
-        height: 200px;
-        background-color: #00008b;
-
-      }
-
-      .img-profile{
-        width:300px;
-        margin-top:-100px;
-        border-radius: 50%;
-      }
-      .margin-link{
-        margin-left:20px;
-        margin-right:20px;
-
-      }
-
-    </style>
+      <link rel="stylesheet" href="css/style.css"/>
+    
   </head>
   <body>
-    <div class="container-fluid">
+    <div class="container">
       <div class="row">
         <div class="col capa">
           
@@ -51,7 +32,7 @@
           <h3>Kauany Gabrielli Pereira de Lima</h3>
         </div>
       </div>
-      <nav class="navbar navbar-expand-sm navbar-light bg-light justify-content-center">   
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark justify-content-center">   
         
           <div class="navbar-nav">
             <a class="nav-link margin-link active" href="#">Linha do Tempo</a>
@@ -66,7 +47,7 @@
 
   <div class="container mt-3">
     <div class="row">
-      <div class="col-sm-4">
+      <div class="col-sm-5">
         <div class="card">
           <div class="card-body">
             <h5 class="card-title">Apresentação</h5>
@@ -79,7 +60,7 @@
           </ul>
         </div>
       </div>
-      <div class="col-sm-8">
+      <div class="col-sm-7">
         <div class="card">
           <div class="card-body">
             <h5 class="card-title">Publicações</h5>
@@ -88,8 +69,16 @@
         </div>
         <div class="card">
           <div class="card-body mt-3">
-            <h5 class="card-title">Kauany Gabrielli Pereira de Lima</h5>
-            <h6 class="card-subtitle mb-2 text-muted">06/09/2020 17:42</h6>
+            <div class="row">
+              <div class="col-2 pr-0">
+                <img  class="img-fluid img-feed" src="img/imag3.jpg"alt="Foto do Feed">
+              </div>
+              <div class="col-10">
+                <h5 class="card-title mb-0">Kauany Gabrielli Pereira de Lima</h5>
+                <p class=" mb-2 text-muted data-feed">06/09/2020 17:42</p>
+              </div>
+            </div>
+            
           </div>
 
           <div class="card-body">
@@ -97,8 +86,12 @@
           </div>
 
           <div class="card-body d-flex justify-content-around">
-            <a href="#" class="card-link">Curtir</a>
-            <a href="#" class="card-link">Comentar</a>
+            <a href="#" class="card-link actions">
+              <i class="fas fa-heart"></i>Curtir
+            </a>
+            <a href="#" class="card-link actions">
+              <i class="far fa-comment"></i> Comentar
+            </a>
           </div>
 
         </div>
@@ -114,5 +107,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    
+    <script src="https://kit.fontawesome.com/85fa47c21d.js" crossorigin="anonymous"></script>
   </body>
 </html>
